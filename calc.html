@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+    <div class="clc">
+    <head>
+        <link rel="stylesheet" type="text/css" href="calc.css">
+        <title>
+            Calculator
+        </title>
+        <h1>
+            This Is A Calculator
+        </h1>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter A Number" id="num1" aria-valuetext="num">
+        <input type="text" placeholder="Enter Another Number" id="num2" aria-valuetext="num"><br><br>
+        <button onclick=sum()>Addition</button>
+        <button onclick=sub()>Subraction</button>
+        <button onclick=mul()>Multiplication</button>
+        <button onclick=div()>Division</button>
+        <input type= "button" value= "clear" onclick= "clearInput()">
+        <p id="demo"></p>
+        <script
+            src="calc.js">
+        </script>
+    </body>
+</div>
+</html>

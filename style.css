@@ -1,0 +1,26 @@
+.total{
+    background-color:whitesmoke;
+}
+.container{
+    text-align: center;
+    border: solid black;
+    border-style:outset;
+    align-items: stretch;
+    padding:20px;
+    margin:auto;
+    margin-bottom: 10px;
+}
+.sec{
+    text-align: center;
+    border: solid black;
+    padding:10px;
+    margin:auto;
+}
+.button{
+    color: whitesmoke;
+    background-color:#0095f6;
+    padding:5px;
+}
+.nit{
+    text-align: center;
+}
