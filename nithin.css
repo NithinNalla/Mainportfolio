@@ -1,235 +1,158 @@
-.cd{
-    display: flex;
-    color: red;
-    flex-wrap: wrap;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    gap:20px;
-    justify-content:space-between;
-  }
-.cd a{
-  transition: all 0.3s ease 0s;
-}
-.cd a:hover{
-  color: aquamarine;
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #2C3E50, #4CA1AF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 30px;
+  padding: 30px;
+  color: #FFFFFF;
 }
 
-.hot{
-    display:flex;
+header.cd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-body{
-    /* background-color:aliceblue; */
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    /* background-image: url('background.jpg'); */
-    background-image: linear-gradient(to right,#7F7FD5 , #91EAE4);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-    margin: 30px;
-    margin-top: 0px;
-    padding:30px;
 
+header.cd nav a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+header.cd nav a:hover {
+  color: #1ABC9C;
+}
+
 h1 {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    color:royalblue;
-    text-align: center;
-  }
-  
-  .box-container {
-    /* border: 5px solid black; */
-    margin: auto;
-    /* width:1230px;
-    height:400px; */
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    /* align-content: center; */
-    /* justify-content: center; */
-    /* gap: 10px; */
-  }
-  
-  .box {
-    /* border: 2px solid red; */
-    /* background-color: rgb(7, 19, 7); */
-    height: 200px;
-    width: 50px;
-    text-align: center;
-    color: black;
-    font-size: 1.25rem;
-    margin: 3px;
-    /* flex-wrap: wrap; */
-  }
-  
-  #box-1 {
-    flex-grow: 1;
-    width:fit-content;
-    height: fit-content;
-    text-align: left;
-    border-color: black;
-    /* background-color: lightblue; */
-    font-size:small;
-    /* flex-wrap: wrap; */
-  }
-  
-  #box-2 {
-    flex-grow: 1;
-    flex-direction:row;
-    width:500px;
-    height:fit-content;
-    border-color: black;
-    /* background-color: lightblue; */
-    font-size:small;
-    text-align: left;
-    /* flex-wrap: wrap; */
-  }
-  #box-3 {
-    flex-grow: 1;
-    width: 500px;
-    height: fit-content;
-    text-align: left;
-    border-color: black;
-    /* background-color: lightblue; */
-    font-size:small;
-    /* flex-wrap: wrap; */
-  }
-  #box-4 {
-    width:400px;
-    height: fit-content;
-    font-size:small;
-    text-align: left;
-    border-color: black;
-    flex-grow: 1;
-    /* flex-wrap: wrap; */
-    /* background-color: lightblue; */
-  }
-  #box-5 {
-    width:400px;
-    height: fit-content;
-    font-size:small;
-    text-align: left;
-    border-color: black;
-    flex-grow: 1;
-    /* flex-wrap: wrap; */
-    /* background-color: lightblue; */
-  }
-  .project h2{
-    text-align: center;
-  }
-  .project h3{
-    text-align:justify;
-  }
-  .contact{
-    margin: 3px;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    color: rgb(0, 0, 0);
-  }
-  .det{
-    display: flex;
-    /* gap: 100px; */
-    justify-content:space-evenly;
-  }
-  /* .form{
-    justify-content:space-between;
-  }  */
-  /* .img{
-    display:flex;
-  } */
-  .det img{
-    border-radius: 70%;
-  }
-  .about{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    /* gap:50px; */
-  }
-  .matter{
-    display:flex;
-    justify-content:center;
-    justify-self:left;
-    text-align:left;
-    /* flex-wrap: wrap; */
-    /* background-color: lightblue; */
-    width:400px;
-    color: rgb(0, 0, 0);
-  }
-  .skills-container
-  {
-    /* border: 5px solid black; */
-    margin: auto;
-    /* width:1230px;
-    height:400px; */
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .skills{
-    width:fit-content;
-    height: fit-content;
-    text-align: left;
-    border-color: black;
-    /* background-color: lightblue; */
-    font-size:small;
-  } 
-  #pskills{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  #tskills{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  .python {
-    width: 85%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  } 
-  .c {
-    width: 80%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  } 
-  .html {
-    width: 65%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  } 
-  .java {
-    width: 50%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  } 
-  .communication {
-    width: 90%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  }
-  .projects {
-    width: 80%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  }
-  .team {
-    width: 75%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  }
-  .creativity {
-    width: 60%; 
-    background-color: #0BCEAF;
-    height: 18px; 
-    text-align: end;
-  }
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #1ABC9C;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.matter {
+  width: 400px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.skillsc {
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills {
+  margin: 20px;
+  text-align: left;
+}
+
+.skill-bar {
+  height: 18px;
+  background-color: #2C3E50;
+  text-align: right;
+  padding-right: 5px;
+  color: #FFFFFF;
+}
+
+.skill-bar.python { width: 85%; background-color: #1ABC9C; }
+skill-bar.c { width: 80%; background-color: #3498DB; }
+.skill-bar.html { width: 65%; background-color: #E67E22; }
+.skill-bar.java { width: 50%; background-color: #E74C3C; }
+.skill-bar.communication { width: 90%; background-color: #1ABC9C; }
+.skill-bar.projects { width: 80%; background-color: #3498DB; }
+.skill-bar.team { width: 75%; background-color: #E67E22; }
+.skill-bar.creativity { width: 60%; background-color: #E74C3C; }
+
+.project {
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #1ABC9C;
+  border-radius: 10px;
+  background-color: #34495E;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact {
+  text-align: center;
+}
+.det {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.det img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.det div p {
+  margin: 5px 0;
+}
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the form elements */
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #2C3E50;
+  color: #FFFFFF;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #1ABC9C;
+  outline: none;
+}
+
+form button {
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #16A085;
+}
+
